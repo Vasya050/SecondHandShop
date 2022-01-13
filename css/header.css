@@ -31,7 +31,16 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: opacity 0.24s ease;
 } 
+
+.header__btn:hover {
+    opacity: 5;
+}
+
+.header__btn:active {
+    opacity: 1;
+}
 
 .header__btn_cart {
     background-image: url("../img/cart.svg");

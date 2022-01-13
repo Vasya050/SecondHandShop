@@ -17,10 +17,14 @@
     background-color: #F5F5F5;
     border-radius: 20px;
     will-change: border-radius;
-    transition: border-radius 0.2s ease-in-out;
+    transition: border-radius 0.2s ease-in-out, background-color .24s ease;
     border: none;
     z-index: 2;
 }
+
+.search__button:hover {
+    background-color: #e5e5e5;
+  }
 
 .search__input {
     position: absolute;
