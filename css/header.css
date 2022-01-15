@@ -35,7 +35,7 @@
 } 
 
 .header__btn:hover {
-    opacity: 5;
+    opacity: .5;
 }
 
 .header__btn:active {
@@ -46,7 +46,7 @@
     background-image: url("../img/cart.svg");
 }
 
-.header__btn_vavorite {
+.header__btn_favorite {
     background-image: url("../img/favorite.svg");
 }
 
