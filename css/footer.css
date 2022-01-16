@@ -16,7 +16,6 @@
     font-size: 20px;
     line-height: 1.3;
     text-transform: uppercase;
-    margin-bottom: 27px;
 }
 
 .footer__list-vertical {
@@ -26,6 +25,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
+    padding-top: 27px;
 }
 
 .footer__list-contacts {
@@ -80,28 +80,6 @@
     background-color: #A4EE08;
   }
 
-.footer__social-link:hover {
-    opacity: .5;
-}
-
-.footer__social-link_instagram {
-    background-image: url("../img/insta.svg");
-}
-
-.footer__social-link_vk {
-    background-image: url("../img/vk.svg");
-}
-
-.footer__social-link_facebook {
-    background-image: url("../img/facebook.svg");
-}
-
-.footer__agreement {
-    display: block;
-    margin: 0 auto;
-    width: max-content;
-}
-
 @media (max-width: 1200px) {
     .footer {
         padding-bottom: 72px;
@@ -125,6 +103,37 @@
         display: grid;
         grid-template-columns: 1fr;
       }
+
+
+      .footer__subtitle {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .footer__subtitle:after {
+        content: '';
+        display: block;
+        width: 14px;
+        height: 10px;
+        background-image: url("../img/arrow-bg.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+
+      .footer__list-vertical {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    
+      .footer__nav-item_active  .footer__list-vertical {
+        height: auto;
+        padding-top: 15px;
+      }
     
       .footer__list-contacts {
         flex-wrap: wrap;
@@ -137,11 +146,6 @@
         line-height: 20px;
         margin: 0;
       }
-    
-      .footer__subtitle {
-        font-size: 16px;
-      }
-    
     
       .footer__link {
         font-weight: 300;
@@ -180,3 +184,15 @@
         background-color: var(--main-bg-color);
       }
 }
+
+/* .footer__social-link_instagram {
+  background-image: url("../img/insta.svg");
+}
+
+.footer__social-link_vk {
+  background-image: url("../img/vk.svg");
+}
+
+.footer__social-link_facebook {
+  background-image: url("../img/facebook.svg");
+} */

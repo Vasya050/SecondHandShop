@@ -23,6 +23,30 @@
     color: var(--main-bg-color);
 }
 
+.hero__slider-pagination {
+    position: absolute;
+    text-align: center;
+    bottom: 30px;
+    z-index: 10;
+}
+
+.hero__slider-line {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 8px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    margin: 7px;
+    will-change: width;
+    transition: width .4s ease, opacity .4s ease;
+}
+
+.hero__slider-line_active {
+    opacity: 1;
+    width: 130px;
+}
+
 @media (max-width: 1200px) {
     .hero {
         padding: 50px 0 35px;

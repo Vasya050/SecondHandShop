@@ -7,7 +7,7 @@
     <title>Second Hand</title>
 
     <link rel="stylesheet" href="css/index.css">
-    <style>
+    <style id="bg">
       .hero__slider-link_women {
         background-image: url('img/banner-women.jpg');
       }
@@ -33,6 +33,8 @@
         }
       }
     </style>
+
+    <script src="scripts/index.js" type="module"></script>
   </head>
   <body>
     <header class="header">
@@ -69,7 +71,7 @@
   
         <div class="header__search">
           <form action="#" class="search">
-            <input type="search" class="search__input">
+            <input type="search" class="search__input" required>
             <button class="search__button" type="button"></button>
             <button class="search__close" type="button"></button>
           </form>
@@ -92,24 +94,26 @@
     <main>
       <section class="hero">
         <div class="container hero__container">
-          <div class="hero__slider">
-            <ul class="hero__slider-wrapper">
-              <li class="hero__slider-item">
+          <div class="hero__slider swiper">
+            <ul class="hero__slider-wrapper swiper-wrapper">
+              <li class="hero__slider-item swiper-slide">
                 <a href="?category=women" class="hero__slider-link hero__slider-link_women">
                   <h2 class="hero__slider-title">Новые поступления блузок</h2>
                 </a>
               </li>
-              <li class="hero__slider-item" hidden>
+              <li class="hero__slider-item swiper-slide">
                 <a href="?category=men" class="hero__slider-link hero__slider-link_men">
                   <h2 class="hero__slider-title">Мужские стильные рубашки</h2>
                 </a>
               </li>
-              <li class="hero__slider-item" hidden>
+              <li class="hero__slider-item swiper-slide">
                 <a href="?category=kids" class="hero__slider-link hero__slider-link_kids">
                   <h2 class="hero__slider-title">Собираем ребенка в&nbsp;школу</h2>
                 </a>
               </li>
             </ul>
+            
+            <div class="hero__slider-pagination"></div>
           </div>
         </div>
       </section>
