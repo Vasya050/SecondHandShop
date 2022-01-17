@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     height: 46px;
+    z-index: 2;
 }
 
 .search__button {
@@ -35,7 +36,7 @@
     border: none;
     border-radius: 20px 0 0 20px;
     transform: scale(0);
-    transition: transform 0.4s ease-in-out 0.2s;
+    transition: transform 0.4s ease-in-out;
     transform-origin: right;
     background-color: #F5F5F5;
 }
@@ -43,10 +44,14 @@
 .search_active .search__input {
     transform: scale(1);
     padding: 14px 30px;
+    transition: transform 0.4s ease-in-out 0.2s;
+
 }
 
 .search_active .search__button {
     border-radius: 0 20px 20px 0;
+    transition: border-radius 0.2s ease-in-out, background-color .24s ease;
+
 }
 
 .search__close {
@@ -83,5 +88,8 @@
         border-radius: 0 12px 12px 0;
     }
 
+    .search__close {
+        display: none;
+    }
 
 }

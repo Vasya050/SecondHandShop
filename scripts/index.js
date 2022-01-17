@@ -16,6 +16,7 @@ searchControl({
   selectorForm: '.search',
   classActive: 'search_active',
   selectorClose: '.search__close',
+  breakpoint: 760,
 });
 
 selectControl({
