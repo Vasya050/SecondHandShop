@@ -1,0 +1,43 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 999;
+  }
+  
+  .overlay_active {
+    display: flex;
+  }
+  
+  .overlay__modal {
+    position: relative;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 80px 150px;
+  }
+  
+  .overlay__modal_cart {
+    padding: 60px 100px;
+  }
+  
+  .overlay__button-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/close.svg");
+    background-size: 24px;
+    border: none;
+    opacity: 0.4;
+  }

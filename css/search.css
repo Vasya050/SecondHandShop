@@ -4,9 +4,9 @@
     align-items: center;
     height: 46px;
     z-index: 2;
-}
-
-.search__button {
+  }
+  
+  .search__button {
     position: relative;
     display: block;
     width: 70px;
@@ -18,16 +18,16 @@
     background-color: #F5F5F5;
     border-radius: 20px;
     will-change: border-radius;
-    transition: border-radius 0.2s ease-in-out, background-color .24s ease;
+    transition: border-radius 0.2s ease-in-out 0.4s, background-color .24s ease;
     border: none;
     z-index: 2;
-}
-
-.search__button:hover {
+  }
+  
+  .search__button:hover {
     background-color: #e5e5e5;
   }
-
-.search__input {
+  
+  .search__input {
     position: absolute;
     right: 70px;
     top: 0;
@@ -35,26 +35,26 @@
     height: 100%;
     border: none;
     border-radius: 20px 0 0 20px;
-    transform: scale(0);
+    transform: scaleX(0);
     transition: transform 0.4s ease-in-out;
     transform-origin: right;
     background-color: #F5F5F5;
-}
-
-.search_active .search__input {
-    transform: scale(1);
+  }
+  
+  .search_active .search__input {
+    transform: scaleX(1);
     padding: 14px 30px;
     transition: transform 0.4s ease-in-out 0.2s;
-
-}
-
-.search_active .search__button {
+  
+  }
+  
+  .search_active .search__button {
     border-radius: 0 20px 20px 0;
     transition: border-radius 0.2s ease-in-out, background-color .24s ease;
-
-}
-
-.search__close {
+  
+  }
+  
+  .search__close {
     position: absolute;
     top: 6px;
     right: 11px;
@@ -69,27 +69,27 @@
     visibility: hidden;
     transition: opacity 0.4s ease-in-out;
     z-index: 3;
-}
-
-.search_active .search__close {
+  }
+  
+  .search_active .search__close {
     visibility: visible;
     opacity: 0.4;
-}
-
-@media (max-width: 760px) {
+  }
+  
+  @media (max-width: 760px) {
     .search__input {
-        position: static;
-        width: 100%;
-        border-radius: 12px 0 0 12px;
-        transform: scale(1);
+      position: static;
+      width: 100%;
+      border-radius: 12px 0 0 12px;
+      transform: scaleX(1);
     }
-
+  
     .search__button {
-        border-radius: 0 12px 12px 0;
+      border-radius: 0 12px 12px 0;
     }
-
+  
     .search__close {
-        display: none;
+      display: none;
     }
-
-}
+  
+  }

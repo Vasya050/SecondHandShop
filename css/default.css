@@ -1,80 +1,78 @@
 html {
     box-sizing: border-box;
-    --main-color:#272727;
-    --main-bg-color:#fff;
-    --heart-color:#D93162;
-    --main-grey-color:#F5F5F5;
-    --main-green-color:#A4EE08;
-}
-
-*,
-*:after,
-*:before {
+    --main-color: #272727;
+    --main-bg-color: #fff;
+    --heart-color: #D93162;
+  }
+  
+  *,
+  *:after,
+  *:before {
     box-sizing: inherit;
-}
-
-body {
+  }
+  
+  body {
     min-width: 320px;
     font-family: Montserrat, sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: var(--main-color);
     background-color: var(--main-bg-color);
-}
-
-img {
+  }
+  
+  img {
     max-width: 100%;
     height: auto;
-}
-
-button {
+  }
+  
+  button {
     cursor: pointer;
     padding: 0;
-}
-
-input, textarea {
+  }
+  
+  input, textarea {
     font-family: inherit;
-}
-
-a {
+  }
+  
+  a {
     color: inherit;
     text-decoration: none;
-}
-
-ul {
+  }
+  
+  ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-h1, h2, h3, h4 {
+  }
+  
+  h1, h2, h3, p {
     margin: 0;
-}
-
-.container {
+  }
+  
+  .container {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 30px;
-}
-
-.hidden {
+  }
+  
+  .hidden {
     display: none;
-}
-
-@media (max-width: 1200px) {
+  }
+  
+  @media (max-width: 1200px) {
     .container {
-        padding: 0 72px;
+      padding: 0 72px;
     }
-}
-
-@media (max-width: 1000px) {
+  }
+  
+  @media (max-width: 1000px) {
     .container {
-        padding: 0 94px;
+      padding: 0 94px;
     }
-}
-
-@media (max-width: 580px) {
+  }
+  
+  @media (max-width: 580px) {
     .container {
-        padding: 0 20px;
+      padding: 0 20px;
     }
-}
+  }
