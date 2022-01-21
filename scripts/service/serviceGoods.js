@@ -1,5 +1,5 @@
 // const URL_SERVER = 'http://localhost:3000';
-const URL_SERVER = 'https://fast-reaches-62234.herokuapp.com';
+const URL_SERVER = 'https://young-brook-74474.herokuapp.com';
 const URL_POSTFIX = '/api/goods';
 
 const getGoods = (query = '') =>
